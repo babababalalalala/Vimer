@@ -1,0 +1,286 @@
+/* 清除内外边距 */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* em 和 i 斜体的文字不倾斜 */
+em,
+i {
+  font-style: normal;
+}
+/* 去掉li的小圆点 */
+li {
+  list-style: none;
+}
+img {
+  /* border 0 照顾低版本浏览器 */
+  border: 0;
+  /* 取消图片底侧有空白缝隙的问题 */
+  vertical-align: middle;
+}
+/* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+button {
+  cursor: pointer;
+}
+/* 去掉默认灰色边框 */
+input {
+  border: 0;
+  outline: none;
+}
+/* 消除超链接的下划线 */
+a {
+  text-decoration: none;
+}
+/* 清除浮动 */
+.clearfix:after {
+  visibility: hidden;
+  clear: both;
+  display: block;
+  content: ".";
+  height: 0;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+/* 定义背景颜色和文字 */
+body {
+  background-color: #f4f4f4;
+  font-family: Microsoft yahei;
+}
+.header {
+  position: relative;
+  z-index: 999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+
+  width: 100%;
+  height: 55px;
+
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+.header .search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  width: 330px;
+  height: 30px;
+  margin: 40px 0;
+  border: 1px solid #979797;
+  border-radius: 25px;
+
+  background-color: #fff;
+}
+.header .search input {
+  width: 290px;
+  height: 30px;
+
+  color: #98999c;
+  font-size: 18px;
+}
+.header .search img {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+
+  width: 20px;
+  height: 20px;
+
+  cursor: pointer;
+}
+
+.focus {
+  position: relative;
+
+  width: 100%;
+  height: 230px;
+
+  overflow: hidden;
+}
+.focus ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+}
+.focus ul li {
+  float: left;
+}
+.focus ul li a {
+  cursor: default;
+}
+.focus ul li img {
+  width: 1519px;
+}
+.focus .circle {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 50;
+
+  padding: 6px;
+  margin-left: -100px;
+}
+.focus .circle li {
+  float: left;
+
+  display: block;
+
+  width: 13px;
+  height: 13px;
+  border-radius: 10px;
+  margin: 0 25px;
+
+  background-color: #4d4947;
+  cursor: pointer;
+}
+.focus .circle .current {
+  background-color: #d9d2cf;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+  width: 1260px;
+  height: 1100px;
+  overflow: hidden;
+}
+.content .bg {
+  display: none;
+  position: absolute;
+  top: 285px;
+  width: 100%;
+  height: 1100px;
+  background-color: rgba(218, 215, 215, 0.8);
+}
+.content .classify {
+  width: 88%;
+  height: 40px;
+  border-bottom: 1px solid #e1e1e1;
+
+  line-height: 40px;
+}
+.content .classify dl {
+  display: flex;
+  justify-content: flex-start;
+}
+.content .classify dl dt {
+  color: #9e9e9e;
+}
+.content .classify dl dd {
+  margin-left: 20px;
+}
+.content .classify dl dd a {
+  color: #292929;
+}
+.content ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1200px;
+  height: 830px;
+  padding: 40px 30px;
+}
+.content ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 380px;
+
+  margin: 20px 0;
+  text-align: center;
+}
+.content ul li .star {
+  margin: 7px 0;
+}
+.content ul li h4 {
+  width: 120px;
+  padding: 7px 0;
+  border-bottom: 1px solid #f4f4f4;
+}
+.content ul li:hover h4:last-child {
+  border-bottom: 1px solid #e0e0e0;
+}
+.content ol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  position: relative;
+  width: 1260px;
+  height: 45px;
+}
+.content ol li {
+  line-height: 30px;
+}
+.content ol li a {
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  text-align: center;
+  line-height: 20px;
+  margin: 0 5px;
+  border-radius: 50%;
+
+  color: #fff;
+  background-color: #444444;
+}
+.content ol strong {
+  display: inline-block;
+  width: 20px;
+  height: 30px;
+
+  text-align: center;
+  line-height: 20px;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+.content ol li:first-child::before {
+  content: "";
+
+  position: absolute;
+  top: 16px;
+  left: 538px;
+
+  width: 10px;
+  height: 10px;
+  border-bottom: 3px solid #000;
+  border-left: 3px solid #000;
+
+  transform: rotate(45deg);
+}
+.content ol li:last-child::before {
+  content: "";
+
+  position: absolute;
+  top: 16px;
+  left: 710px;
+
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #000;
+  border-right: 3px solid #000;
+
+  transform: rotate(45deg);
+}

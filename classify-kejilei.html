@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>分类页面</title>
+    <link rel="stylesheet" href="css/classify.css" />
+    <!-- 引入mockjs -->
+    <script
+      type="text/javascript"
+      src="http://mockjs.com/dist/mock.js"
+    ></script>
+    <script type="text/javascript" src="js/book-mock.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+    <script src="js/animate.js"></script>
+    <script src="js/classify.js"></script>
+    <script src="js/detail.js"></script>
+    <link rel="stylesheet" href="css/detail.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="images/logo3.png" alt="" />
+      <div class="search">
+        <input type="search" value="请搜索" />
+        <a href="search.html">
+          <img src="images/search.png" alt="" />
+        </a>
+        
+      </div>
+    </div>
+    <div class="focus">
+      <!-- 核心的滚动区域 -->
+      <ul>
+        <li>
+          <a href="#"><img src="images/banner-1.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"> <img src="images/banner-2.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"> <img src="images/banner-3.png" alt="" /></a>
+        </li>
+      </ul>
+      <!-- 小圆圈 -->
+      <ol class="circle"></ol>
+      <div class="auto"></div>
+    </div>
+    <div class="content">
+      <div class="bg"></div>
+      <div class="classify">
+        <dl>
+          <dt>分类 ：</dt>
+          <dd><a href="classify-wenxuelei.html">文学类</a></dd>
+          <dd><a href="#">科技类</a></dd>
+          <dd><a href="classify-zhexuelei.html">哲学类</a></dd>
+          <dd><a href="classify-yishulei.html">艺术类</a></dd>
+        </dl>
+      </div>
+      <ul class="list">
+        <li>
+          <div class="image">
+            <img src="images/cover.png" alt="" />
+          </div>
+          <div class="star"></div>
+          <h4 class="title">书名</h4>
+          <h4 class="author">作者</h4>
+        </li>
+        <li>
+          <div class="image">
+            <img src="images/cover.png" alt="" />
+          </div>
+          <div class="star"></div>
+          <h4 class="title">书名</h4>
+          <h4 class="author">作者</h4>
+        </li>
+        <li>
+          <div class="image">
+            <img src="images/cover.png" alt="" />
+          </div>
+          <div class="star"></div>
+          <h4 class="title">书名</h4>
+          <h4 class="author">作者</h4>
+        </li>
+        <li>
+          <div class="image">
+            <img src="images/cover.png" alt="" />
+          </div>
+          <div class="star"></div>
+          <h4 class="title">书名</h4>
+          <h4 class="author">作者</h4>
+        </li>
+        <li>
+          <div class="image">
+            <img src="images/cover.png" alt="" />
+          </div>
+          <div class="star"></div>
+          <h4 class="title">书名</h4>
+          <h4 class="author">作者</h4>
+        </li>
+        <li>
+          <div class="image">
+            <img src="images/cover.png" alt="" />
+          </div>
+          <div class="star"></div>
+          <h4 class="title">书名</h4>
+          <h4 class="author">作者</h4>
+        </li>
+        <li>
+          <div class="image">
+            <img src="images/cover.png" alt="" />
+          </div>
+          <div class="star"></div>
+          <h4 class="title">书名</h4>
+          <h4 class="author">作者</h4>
+        </li>
+        <li>
+          <div class="image">
+            <img src="images/cover.png" alt="" />
+          </div>
+          <div class="star"></div>
+          <h4 class="title">书名</h4>
+          <h4 class="author">作者</h4>
+        </li>
+      </ul>
+      <ol>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <strong>...</strong>
+        <li><a href="#">x</a></li>
+      </ol>
+      <p>共 x 页</p>
+    </div>
+    <div class="main">
+      <div class="detail">
+      <div class="triangle">
+        <img src="images/cha.png" alt="" />
+      </div>
+      <div class="middle">
+        <dl>
+          <dt>
+            <div class="bookcover">
+              <img src="images/bookcover.png" alt="" class="cover" />
+            </div>
+            <div class="themes">
+              <h1>书名</h1>
+                  <div class="autor">
+                    <img src="images/author.png" alt="" />
+                      <i class="separator"></i>
+                      <i>作者</i>
+                  </div>
+                  <div class="publish">
+                    <img src="images/author.png" alt="" />
+                      <i class="separator"></i>
+                      <i>出版社</i>
+                  </div>
+                  <div class="publishDate">
+                    <img src="images/author.png" alt="" />
+                      <i class="separator"></i>
+                      <i>出版时间</i>
+                  </div>
+                  <div class="library">
+                    <img src="images/author.png" alt="" />
+                      <i class="separator"></i>
+                      <i>图书馆藏书 ：</i>
+                      <div class="position">
+                        <i>x本 <br />xloux架xx</i>
+                      </div>
+                  </div>
+                  <div class="bookUrl">
+                    <img src="images/author.png" alt="" />
+                      <i class="separator"></i>
+                     <img src="images/db.png" alt="" /> 
+                     <img src="images/zh.png" alt="" />
+                  </div>
+                      
+                    </li>
+                    <div class="buyUrl">
+                    <img src="images/author.png" alt="" />
+                      <i class="separator"></i>
+                     <img src="images/jd.png" alt="" /> 
+                     <img src="images/dd.png" alt="" />
+                     <img src="images/ymx.png" alt="" />
+                  </div>
+            </div>
+          </dt>
+          <dd>
+            <h2>作者简介</h2>
+            <p>作者很帅</p>
+          </dd>
+          <dd>
+            <h2>书籍简介</h2>
+            <p>书很好看</p>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

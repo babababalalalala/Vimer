@@ -1,0 +1,173 @@
+/* 清除内外边距 */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* em 和 i 斜体的文字不倾斜 */
+em,
+i {
+  font-style: normal;
+}
+/* 去掉li的小圆点 */
+li {
+  list-style: none;
+}
+img {
+  /* border 0 照顾低版本浏览器 */
+  border: 0;
+  /* 取消图片底侧有空白缝隙的问题 */
+  vertical-align: middle;
+}
+/* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+button {
+  cursor: pointer;
+}
+/* 去掉默认灰色边框 */
+input {
+  border: 0;
+  outline: none;
+}
+/* 消除超链接的下划线 */
+a {
+  text-decoration: none;
+}
+/* 清除浮动 */
+.clearfix:after {
+  visibility: hidden;
+  clear: both;
+  display: block;
+  content: ".";
+  height: 0;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+/* 定义背景颜色和文字 */
+body {
+  font-family: Microsoft yahei;
+}
+.main {
+  display: none;
+}
+.detail {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 900px;
+  height: 900px;
+  margin: 55px auto;
+  background-color: #fff;
+}
+.detail .triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 0;
+  height: 0;
+  border: 40px solid transparent;
+  border-top-color: #57c296;
+  border-right-color: #57c296;
+}
+.detail .triangle img {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+
+  width: 25px;
+  height: 25px;
+}
+.detail .middle {
+  position: relative;
+  width: 760px;
+  height: 700px;
+}
+.detail .middle::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid #d4a9a9;
+  border-left: 1px solid #d4a9a9;
+}
+.detail .middle::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: 100px;
+  height: 100px;
+  border-bottom: 1px solid #d4a9a9;
+  border-right: 1px solid #d4a9a9;
+}
+.detail .middle dl {
+  position: relative;
+  margin: 60px;
+}
+.detail .middle dl dt .bookcover {
+  height: 370px;
+}
+.detail .middle dl dt .cover {
+  width: 200px;
+  height: 280px;
+}
+.detail .middle dl dt .themes {
+  position: absolute;
+  top: -30px;
+  right: 0;
+
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+}
+.detail .middle dl dt h1 {
+  margin: 30px 200px 0px 100px;
+}
+.detail .middle dl dt .autor,
+.detail .middle dl dt .publishDate,
+.detail .middle dl dt .bookUrl {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.detail .middle dl dt i {
+  height: 14px;
+  line-height: 14px;
+}
+
+.detail .middle dl dt .separator {
+  display: inline-block;
+  width: 1px;
+  margin: 4px 15px 0;
+  background-color: #000;
+}
+.detail .middle dl dt .library {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+.detail .middle dl dt .library img {
+  width: 17px;
+  height: 19px;
+}
+.detail .middle dl dt .themes img {
+  margin-left: 20px;
+}
+.detail .middle dl dd {
+  margin-top: 40px;
+}
